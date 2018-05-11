@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("sandwich.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#googleMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">SANDWICH ONLY</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sweet');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">SWEET</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Meat');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">MEAT</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Other');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">OTHER</div>
+      </a>
+    </div>
+
+    <div id="Sweet" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Peanut Butter and Jelly Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Two slices of bread covering peanut butter and jelly</p>
+      <hr>
+      <h1><b>Peanut Butter, Banana, and Honey Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+        <p class="w3-text-grey">A variant of our patented PB and J, with bananas and honey instead</p>
+      <h1><b>Nutella Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">A simple yet delightful treat, nutella in two slices of bread</p>
+    </div>
+
+    <div id="Meat" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Ham Sandwich</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Ham surrounded by bread</p>
+      <hr>
+      <h1><b>Bacon Sandwich</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Bacon surrounded by bread</p>
+      <hr>
+      <h1><b>Roast Beef Sandwich</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Roast Beef surrounded by bread</p>
+      <hr>
+    </div>
+
+
+    <div id="Other" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Cheese Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Cheese surrounded by bread</p>
+      <hr>
+    </div><br>
+    <div id="Other" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Toast Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Toast surrounded by bread</p>
+      <hr>
+    </div><br>
+    <div id="Other" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Basic Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Our Magnum Opus, the most powerful sandwich in all of the world</p>
+      <hr>
+    </div><br>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>In this not-so-plain webpage made for the express purpose of getting a grade, we will list the most necessary sandwiches that any human could possibly make. If you lack the knowledge to construct these works of god, you probably will not be able to function in life. The almighty sandwich overlords created the three categories of sandwich: Sweet, Meat, and Other.</p>
+  </div>
+</div>
+
+<!-- Contact (with google maps) -->
+<div id="googleMap" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Clay
+<br>Hancock High School<br>
+Exploring Computer Science Pilot Course, 2nd Block<br>
+Last Updated: May 2018<br>
+URL:</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
